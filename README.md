@@ -1,7 +1,7 @@
 # ROBLOX-Stud-Imprinter
 A program used to easily tint ROBLOX's stud textures.
 
-# How do you use it
+## How do you use it?
 When you first launch it, you have to provide an output path, but that gets saved to a file in appdata, so you won't have to do it everytime you launch the
 program, unless the folder or file goes missing.
 
