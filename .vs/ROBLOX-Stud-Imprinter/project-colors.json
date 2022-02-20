@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f54064b2-7962-4b7b-a2f5-6189487003df": {
+      "ProjectGuid": "f54064b2-7962-4b7b-a2f5-6189487003df",
+      "DisplayName": "ROBLOX-Stud-Imprinter",
+      "ColorIndex": 0
+    },
+    "962bc311-9aaf-4b9a-a59f-d9d3e790c6b5": {
+      "ProjectGuid": "962bc311-9aaf-4b9a-a59f-d9d3e790c6b5",
+      "DisplayName": "ROBLOX-Stud-Imprinter",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "fb9a09f5-e163-445e-ad4c-591c6690673d": {
+      "ProjectGuid": "fb9a09f5-e163-445e-ad4c-591c6690673d",
+      "DisplayName": "ROBLOX-Stud-Imprinter",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
