@@ -104,6 +104,7 @@ namespace ROBLOX_Stud_Imprinter
             byte mR;
             byte mG;
             byte mB;
+            UInt32 mA;
             while (true)
             {
                 Console.WriteLine("Enter R Value:");
@@ -146,6 +147,22 @@ namespace ROBLOX_Stud_Imprinter
                     Console.WriteLine("Please try again!");
                 }
             }
+            while (true)
+            {
+                Console.WriteLine("Enter Alpha Value: (0 - 100)");
+                try
+                {
+                    mA = Convert.ToUInt32(Console.ReadLine());
+                    if (mA > 100)
+                        throw new Exception();
+                    break;
+                }
+                catch (Exception)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Please try again!");
+                }
+            }
             Console.Clear();
             while (true)
             {
@@ -169,7 +186,11 @@ namespace ROBLOX_Stud_Imprinter
 
                 for(int i = 0; i < 5; i++)
                 {
-                    drawImage(BitmapTable[i], mR, mG, mB, Luminance).Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "" + mB + ".png");
+                    Bitmap LocalOurs = drawImage(BitmapTable[i], mR, mG, mB, Convert.ToByte(Math.Ceiling(255 * (mA / 100f))), Luminance);
+                    if(mA == 100)
+                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "" + mB + ".png");
+                    else
+                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "" + mB + "_"+"trans-"+mA+ ".png");
                 }
                 while (true)
                 {
@@ -200,13 +221,13 @@ namespace ROBLOX_Stud_Imprinter
             }
         }
 
-        static Bitmap drawImage(Bitmap Imprint, byte R, byte G, byte B, float intensity)
+        static Bitmap drawImage(Bitmap Imprint, byte R, byte G, byte B, byte A, float intensity)
         {
             if(Imprint == null)
             {
                 Bitmap Bmp = new Bitmap(128, 128);
                 using (Graphics gfx = Graphics.FromImage(Bmp))
-                using (SolidBrush brush = new SolidBrush(Color.FromArgb(R, G, B)))
+                using (SolidBrush brush = new SolidBrush(Color.FromArgb(A, R, G, B)))
                 {
                     gfx.FillRectangle(brush, 0, 0, 128, 128);
                 }
@@ -267,7 +288,7 @@ namespace ROBLOX_Stud_Imprinter
                     else
                         localB -= offset;
                 }
-                ExitImage.SetPixel(DeltaX, DeltaY, Color.FromArgb(255, localR, localG, localB));
+                ExitImage.SetPixel(DeltaX, DeltaY, Color.FromArgb(A, localR, localG, localB));
 
                 DeltaX++;
             }
