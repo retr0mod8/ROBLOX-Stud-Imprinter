@@ -188,9 +188,9 @@ namespace ROBLOX_Stud_Imprinter
                 {
                     Bitmap LocalOurs = drawImage(BitmapTable[i], mR, mG, mB, Convert.ToByte(Math.Ceiling(255 * (mA / 100f))), Luminance);
                     if(mA == 100)
-                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "" + mB + ".png");
+                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "_" + mB + ".png");
                     else
-                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "" + mB + "_"+"trans-"+mA+ ".png");
+                        LocalOurs.Save(@FolderPath + @"\" + BitmapNameTable[i] + "_" + mR + "_" + mG + "_" + mB + "_"+"trans-"+mA+ ".png");
                 }
                 while (true)
                 {
