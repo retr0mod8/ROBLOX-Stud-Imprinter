@@ -121,13 +121,25 @@
   <data name="glue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="glue_soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glue-soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="inlets" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inlets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inlets_soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inlets-soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="studs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\studs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="studs_soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\studs-soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="universal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\universal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="universal_soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\universal-soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -77,6 +77,10 @@
     <None Include="Resources\universal.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\studs-soft.png" />
+    <None Include="Resources\glue-soft.png" />
+    <None Include="Resources\inlets-soft.png" />
+    <None Include="Resources\universal-soft.png" />
     <Content Include="RSI-Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -99,8 +99,8 @@ namespace ROBLOX_Stud_Imprinter
 
         static void startImage()
         {
-            Bitmap[] BitmapTable = { Properties.Resources.studs, Properties.Resources.inlets, Properties.Resources.glue, Properties.Resources.universal, null };
-            string[] BitmapNameTable = { "studs", "inlets", "glue", "universal", "smooth" };
+            Bitmap[] BitmapTable = { Properties.Resources.studs, Properties.Resources.inlets, Properties.Resources.glue, Properties.Resources.universal, null, Properties.Resources.studs_soft, Properties.Resources.inlets_soft, Properties.Resources.glue_soft, Properties.Resources.universal_soft };
+            string[] BitmapNameTable = { "studs", "inlets", "glue", "universal", "smooth", "studs-soft", "inlets-soft", "glue-soft", "universal-soft" };
             byte mR;
             byte mG;
             byte mB;
@@ -184,7 +184,7 @@ namespace ROBLOX_Stud_Imprinter
                     }
                 }
 
-                for(int i = 0; i < 5; i++)
+                for(int i = 0; i < BitmapTable.Length; i++)
                 {
                     Bitmap LocalOurs = drawImage(BitmapTable[i], mR, mG, mB, Convert.ToByte(Math.Ceiling(255 * (mA / 100f))), Luminance);
                     if(mA == 100)

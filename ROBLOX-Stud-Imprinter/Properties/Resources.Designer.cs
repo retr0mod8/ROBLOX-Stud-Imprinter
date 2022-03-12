@@ -73,9 +73,29 @@ namespace ROBLOX_Stud_Imprinter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap glue_soft {
+            get {
+                object obj = ResourceManager.GetObject("glue_soft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inlets {
             get {
                 object obj = ResourceManager.GetObject("inlets", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inlets_soft {
+            get {
+                object obj = ResourceManager.GetObject("inlets_soft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +113,29 @@ namespace ROBLOX_Stud_Imprinter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap studs_soft {
+            get {
+                object obj = ResourceManager.GetObject("studs_soft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap universal {
             get {
                 object obj = ResourceManager.GetObject("universal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap universal_soft {
+            get {
+                object obj = ResourceManager.GetObject("universal_soft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
